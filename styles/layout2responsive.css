@@ -1,0 +1,51 @@
+#layout>* {
+    background-color: cornflowerblue;
+    border: 0.3rem solid rgb(42, 5, 42);
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: main;
+}
+
+#sideber {
+    grid-area: sidebar;
+}
+
+#advertise {
+    grid-area: advertise;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#layout {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "header  header header header"
+        "navbar main main sidebar "
+        "navbar main main advertise"
+        "footer footer footer footer"
+        ;
+}
+
+@media screen and (max-width:576px){
+    #layout{
+        grid-template-areas: 
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "advertise"
+        "footer";
+    }
+}
