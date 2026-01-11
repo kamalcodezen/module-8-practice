@@ -38,3 +38,26 @@
             "navbar main main advertise"
             "footer footer footer footer";
     }
+
+
+    @media screen and (min-width:576px) and (max-width:992px) {
+        #layout {
+            grid-template-areas:
+                " header header header"
+                "navbar navbar navbar"
+                "sidebar main main "
+                "advertise footer footer";
+        }
+    }
+    
+    @media screen and (max-width:576px) {
+        #layout {
+            grid-template-areas:
+                "header"
+                "navbar"
+                "main"
+                "sidebar"
+                "advertise"
+                "footer";
+        }
+    }
