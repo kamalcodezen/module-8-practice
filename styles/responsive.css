@@ -1,1 +1,40 @@
-    
+    #layout>* {
+        border: 2px dotted red;
+        background-color: cadetblue;
+        padding: 1rem;
+
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    #sidebar {
+        grid-area: sidebar;
+    }
+
+    #advertise {
+        grid-area: advertise;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    #layout {
+        display: grid;
+        gap: 2rem;
+        grid-template-areas:
+            "header header header header "
+            " navbar main main sidebar"
+            "navbar main main advertise"
+            "footer footer footer footer";
+    }
